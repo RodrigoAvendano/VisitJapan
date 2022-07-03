@@ -7,9 +7,11 @@ body{
     width:65%;
     margin:0px auto;
     margin-top:30px;
-    background-color: white;
-    padding: 20px;
+    background: white;
+    padding: 25px;
     box-shadow: 0px 0px 2px gray;
+    height:fit-content;
+    overflow:auto;
 }
 
 .logo{
@@ -57,9 +59,11 @@ body{
     padding-right: 15px;
 }
 
+
 .posts{
     width:60%;
     font-family: Arial, Helvetica, sans-serif;
+    float:left;
 }
 
 .post{
@@ -101,4 +105,33 @@ body{
     color: white;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    font-family: Arial, Helvetica, sans-serif;
+    width:33%;
+    float:right;
+}
+
+.sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color:#333;
+    background: url("../img/lines.png") repeat-x;
+}
+
+.sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+.about img{
+    width: 100%;
+}
+
+.sidebar p{
+    font-size: 15px;
+    text-align: justify;
 }
