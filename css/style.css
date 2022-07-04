@@ -135,3 +135,23 @@ body{
     font-size: 15px;
     text-align: justify;
 }
+
+form input[type="text"],form input[type="password"],form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border:1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;       
+}
+
+form input[type="submit"]{
+    background:#235e3d;
+    color:white;
+    padding: 10px;
+    border: solid 1px gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
