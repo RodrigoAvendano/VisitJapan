@@ -167,3 +167,12 @@ footer{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.bx-wrapper, .bx-viewport{
+    height:250px !important;
+}
+
+.bxslider img{
+    height: 300px;
+    width: 100%;
+}
