@@ -100,4 +100,14 @@ $(document).ready(function () {
     styles.attr("href", light);
     localStorage.setItem("color", light);
   });
+
+  $(".start").click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+  });
 });
