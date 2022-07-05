@@ -83,4 +83,21 @@ $(document).ready(function () {
   </article>`;
     $(".posts").append(posts);
   });
+
+  let styles = $("#themes");
+  let mode = localStorage.getItem("color");
+  if (mode == null) mode = "";
+  styles.attr("href", mode);
+
+  $(".dark-mode").click(function (e) {
+    let dark = "css/dark.css";
+    styles.attr("href", dark);
+    localStorage.setItem("color", dark);
+  });
+
+  $(".light-mode").click(function () {
+    let light = "";
+    styles.attr("href", light);
+    localStorage.setItem("color", light);
+  });
 });
