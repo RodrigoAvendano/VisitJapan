@@ -8,15 +8,17 @@
     <!-- css styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link id="themes" rel="stylesheet" href="css/dark.css" />
-    <!-- SLIDER -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.css" />
     <!-- Js libs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
   </head>
 
@@ -43,7 +45,7 @@
               <a href="#">Diferencia Horaria</a>
             </li>
             <li>
-              <a href="about.html">Sobre Japón</a>
+              <a href="about.hrml">Sobre Japón</a>
             </li>
             <li>
               <a href="#">Contacto</a>
@@ -52,16 +54,32 @@
         </nav>
       </header>
 
-      <section class="slider">
-        <div class="bxslider">
-          <div><img src="img/cielo.jpg" /></div>
-          <div><img src="img/hojas.jpg" /></div>
-          <div><img src="img/rojo.jpg" /></div>
-        </div>
-      </section>
-
       <section class="content">
-        <div class="posts clearfix"></div>
+        <div class="box clearfix">
+          <div id="accordion">
+            <h3>¿Dónde se encuentra?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              ullam facilis, blanditiis nulla quibusdam fuga laboriosam, non
+              ducimus error tempora sint hic cum officiis. Ex odit ea asperiores
+              excepturi beatae? Voluptatibus, laboriosam omnis.
+            </p>
+            <h3>Idioma</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              ullam facilis, blanditiis nulla quibusdam fuga laboriosam, non
+              ducimus error tempora sint hic cum officiis. Ex odit ea asperiores
+              excepturi beatae? Voluptatibus, laboriosam omnis.
+            </p>
+            <h3>Clima</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              ullam facilis, blanditiis nulla quibusdam fuga laboriosam, non
+              ducimus error tempora sint hic cum officiis. Ex odit ea asperiores
+              excepturi beatae? Voluptatibus, laboriosam omnis.
+            </p>
+          </div>
+        </div>
         <aside class="sidebar">
           <div class="about">
             <h4><span>¿Quién soy?</span></h4>
