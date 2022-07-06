@@ -213,3 +213,13 @@ footer {
   display: block;
   float: right;
 }
+
+#logout {
+  text-decoration: none;
+  color: #acb4b0;
+  cursor: pointer;
+  display: block;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}
