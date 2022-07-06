@@ -223,3 +223,18 @@ footer {
   font-weight: bold;
   font-size: 18px;
 }
+
+.box {
+  width: 60%;
+  float: left;
+  margin-top: 60px;
+}
+
+.accordion {
+  margin-top: 20px;
+}
+
+.ui-state-active {
+  background-color: #235e3d !important;
+  border-color: #acb4b0 !important;
+}
