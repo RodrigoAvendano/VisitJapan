@@ -110,4 +110,23 @@ $(document).ready(function () {
       500
     );
   });
+
+  $(".login form").submit(function () {
+    const form_name = $("#form_name").val();
+    localStorage.setItem("form_name", form_name);
+  });
+
+  const form_name = localStorage.getItem("form_name");
+
+  if (form_name != null && form_name != undefined) {
+    const about = $(".about p");
+    about.html("<br/><strong>Bienvenido " + form_name + "</strong>");
+    about.append('<a href="#" id="logout">Cerrar Sesión</a>');
+    $(".login").hide();
+
+    $("#logout").click(function () {
+      localStorage.removeItem("form_name");
+      location.assign("index.html");
+    });
+  }
 });
