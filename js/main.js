@@ -117,6 +117,7 @@ $(document).ready(function () {
     );
   });
 
+  let loc = window.location.href;
   $(".login form").submit(function () {
     const form_name = $("#form_name").val();
     localStorage.setItem("form_name", form_name);
@@ -132,7 +133,29 @@ $(document).ready(function () {
 
     $("#logout").click(function () {
       localStorage.removeItem("form_name");
-      location.assign("index.html");
+      location.assign(loc);
     });
   }
+
+  function currentTime() {
+    let date = new Date();
+    let time = "";
+    let countryDate = date.toLocaleString("es-mx", { timeZone: "Asia/Tokyo" });
+    let hhh = countryDate.substr(10, 8);
+    time = hhh;
+    $(".first-clock").html(`<strong id="jpnt">Hora en Japón</strong>
+      <br><strong id="jpt">${hhh}</strong>`);
+
+    countryDate = date.toLocaleString("es-mx", {
+      timeZone: "America/Mexico_City",
+    });
+    hhh = countryDate.substr(10, 8);
+    time = hhh;
+    $(".second-clock").html(`<strong id="mxnt">Hora en México</strong>
+      <br><strong id="mxt">${hhh}</strong>`);
+    let t = setTimeout(function () {
+      currentTime();
+    }, 1000);
+  }
+  currentTime();
 });
