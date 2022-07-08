@@ -137,7 +137,8 @@ body {
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="date"] {
   padding: 5px;
   border-radius: 2px;
   border: 1px solid #ccc;
@@ -278,4 +279,39 @@ footer {
 #mxnt,
 #jpnt {
   margin-top: 50px;
+}
+
+#form-contact {
+  width: 60%;
+  margin-top: 10px;
+}
+
+#form-contact label {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-top: 5px;
+}
+
+.genders input[type="radio"],
+.genders label {
+  display: inline !important;
+  margin: 10px 5px;
+}
+
+.help-block.form-error {
+  display: block;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #991414;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.error {
+  background-color: rgba(185, 74, 72, 0.8);
+}
+
+.box h2 {
+  font-family: Arial, Helvetica, sans-serif;
 }
