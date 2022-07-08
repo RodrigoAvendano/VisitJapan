@@ -18,7 +18,7 @@
       integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
       crossorigin="anonymous"
     ></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.form-validator.min.js"></script>
     <script src="js/main.js"></script>
   </head>
 
@@ -56,29 +56,52 @@
 
       <section class="content">
         <div class="box clearfix">
-          <div id="accordion">
-            <h3>¿Dónde se encuentra?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              ullam facilis, blanditiis nulla quibusdam fuga laboriosam, non
-              ducimus error tempora sint hic cum officiis. Ex odit ea asperiores
-              excepturi beatae? Voluptatibus, laboriosam omnis.
-            </p>
-            <h3>Idioma</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              ullam facilis, blanditiis nulla quibusdam fuga laboriosam, non
-              ducimus error tempora sint hic cum officiis. Ex odit ea asperiores
-              excepturi beatae? Voluptatibus, laboriosam omnis.
-            </p>
-            <h3>Clima</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              ullam facilis, blanditiis nulla quibusdam fuga laboriosam, non
-              ducimus error tempora sint hic cum officiis. Ex odit ea asperiores
-              excepturi beatae? Voluptatibus, laboriosam omnis.
-            </p>
-          </div>
+          <h2>Contacto</h2>
+          <form action="" method="post" id="form-contact">
+            <label for="nam">Nombre</label>
+            <input
+              type="text"
+              name="nam"
+              id="contactname"
+              data-validation="alphanumeric"
+            />
+            <label for="last">Apellidos</label>
+            <input
+              type="text"
+              name="last"
+              id="surname"
+              data-validation="alphanumeric"
+            />
+            <label for="email">Correo electrónico</label>
+            <input type="email" name=email" id="contmail"
+            data-validation="email">
+            <label for="gender">Sexo</label>
+            <div class="genders">
+              <input
+                type="radio"
+                name="gender"
+                id="f-gender"
+                value="Masculino"
+              />
+              <label for="gender">Masculino</label>
+              <input
+                type="radio"
+                name="gender"
+                id="s-gender"
+                value="Femenino"
+              />
+              <label for="gender">Femenino</label>
+            </div>
+            <label for="birthday">Fecha de nacimiento</label>
+            <input
+              type="date"
+              name="birthday"
+              id="birth"
+              data-validation="date"
+              data-validation-format="dd/mm/yyyy"
+            />
+            <input type="submit" value="Enviar" />
+          </form>
         </div>
         <aside class="sidebar">
           <div class="about">

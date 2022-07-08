@@ -158,4 +158,10 @@ $(document).ready(function () {
     }, 1000);
   }
   currentTime();
+
+  if (window.location.href.indexOf("contact") > -1) {
+    $('form input[name="date"]').datepicker({
+      dateFormat: "dd/mm/yyyy",
+    });
+  }
 });
